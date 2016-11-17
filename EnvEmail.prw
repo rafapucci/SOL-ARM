@@ -30,7 +30,7 @@ User Function EnvEmail(cDe,cPara,cCC,cCO,cAssunto,cMsg)
     If !lResulConn
         cError := MailGetErr()
         cRet := "Falha na conexao: " + cError
-        Return(cRtet)
+        Return(cRet)
     EndIf
 
     SEND MAIL FROM cDe TO cPara CC cCC BCC cCO SUBJECT cAssunto BODY cMsg FORMAT TEXT RESULT lResulSend
